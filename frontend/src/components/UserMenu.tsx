@@ -72,7 +72,7 @@ const UserMenu = () => {
           src={user?.photo_url || ""}
           alt="user-avatar"
         >
-          {user?.username.charAt(0)}
+          {user?.username?.charAt(0) || ""}
         </Avatar>
       </Button>
       <Menu

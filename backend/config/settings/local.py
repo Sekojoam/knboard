@@ -1,4 +1,8 @@
 from .base import *
+import django.utils.translation as original_translation
+from django.utils.translation import gettext_lazy
+
+original_translation.ugettext_lazy = gettext_lazy
 
 # Dummy value for development
 SECRET_KEY = "*m(r@4mdh*!zabwg&6tp%mgs_ezkprs9g+$@x@cdq-z_)dtf2i"

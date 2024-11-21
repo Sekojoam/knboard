@@ -2,7 +2,7 @@ version: "3"
 
 services:
   db:
-    image: postgres:11
+    image: postgres:12
     environment:
       - POSTGRES_DB=knboard
       - POSTGRES_USER=knboard
